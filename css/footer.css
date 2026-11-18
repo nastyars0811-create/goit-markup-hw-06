@@ -1,0 +1,167 @@
+.footer {
+  background: #2e2f42;
+  padding: 100px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-info {
+  margin-right: 120px;
+}
+
+.footer-social {
+  margin-right: 80px;
+}
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo-web {
+  color: #4d5ae5;
+}
+
+.logo-studio1 {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  max-width: 264px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  margin: 0;
+}
+
+.footer-social {
+}
+
+.footer-subscribe {
+  margin-left: auto;
+}
+
+.footer-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin: 0 0 16px;
+}
+
+.footer .icon-link {
+  background-color: #4d5ae5;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .icon-link:hover,
+.footer .icon-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  color: #f4f4fd;
+}
+
+.footer .icon-box {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-top: 0;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-form-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+
+  border: 1px solid #fff;
+  border-radius: 4px;
+
+  background-color: transparent;
+  color: #ffffff;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  transition: 250ms ease-out;
+  transition-property: border-color;
+}
+
+.footer .footer-form-input:focus {
+  border-color: #31d0aa;
+  outline: none;
+}
+
+.footer-form-input::placeholder {
+  color: #ffffff;
+}
+
+.btn-filled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+
+  width: 165px;
+  height: 40px;
+
+  background-color: #4d5ae5;
+  color: #ffffff;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  cursor: pointer;
+
+  transition: background-color 250ms;
+}
+
+.footer .btn-filled:hover,
+.footer .btn-filled:focus {
+  background-color: #31d0aa;
+}
+
+.footer-form-icon {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+  flex-shrink: 0;
+  display: block;
+}
