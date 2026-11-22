@@ -130,13 +130,16 @@
   line-height: 1.11;
   letter-spacing: 0.02em;
 
-  color: #434455;
+  color: #2e2f42;
 }
 
 .mobile-menu-contact-item:first-child .mobile-menu-contact-link {
   color: #4d5ae5;
 }
 
+.mobile-menu-address {
+  font-style: normal;
+}
 .mobile-menu-contact-list {
   display: flex;
   flex-direction: column;
