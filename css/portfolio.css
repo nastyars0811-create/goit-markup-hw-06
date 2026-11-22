@@ -1,4 +1,11 @@
 .portfolio {
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio {
+    padding: 120px 0;
+  }
 }
 
 .portfolio-title {
@@ -13,15 +20,44 @@
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
+  flex-direction: column;
+  align-items: center;
   row-gap: 48px;
 }
 
+@media only screen and (min-width: 768px) {
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio-list {
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+}
+
 .portfolio-item {
-  width: 360px;
+  width: 288px;
   position: relative;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-item {
+    width: 356px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio-item {
+    width: 360px;
+  }
 }
 
 .portfolio-thumb {
@@ -30,10 +66,26 @@
 }
 
 .portfolio-pct {
-  width: 100%;
   object-fit: cover;
   display: block;
+  width: 288px;
+  height: 239px;
 }
+
+@media only screen and (min-width: 768px) {
+  .portfolio-pct {
+    width: 356px;
+    height: 296px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio-pct {
+    width: 360px;
+    height: 300px;
+  }
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -42,12 +94,13 @@
 
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  padding: 40px 32px;
+  padding: 31px 25px;
 
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -61,10 +114,36 @@
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media only screen and (min-width: 768px) {
+  .overlay {
+    padding: 39px 31px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .overlay {
+    padding: 40px 32px;
+  }
+}
+
 .portfolio-wrapper {
-  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  padding: 32px 16px;
+  width: 288px;
+  height: 120px;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-wrapper {
+    width: 356px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio-wrapper {
+    width: 360px;
+  }
 }
 
 .portfolio-name {

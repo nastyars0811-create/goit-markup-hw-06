@@ -1,28 +1,56 @@
 .features.section {
-  background: #fff;
-  padding: 120px 0;
+  padding: 96px 0;
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 1158px) {
+  .features.section {
+    padding: 120px 0;
+  }
 }
 
 .features-list {
   display: flex;
-  justify-content: center;
-  gap: 24px;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
 }
 
 .features-item {
-  width: 264px;
 }
 
 .features-icon-box {
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  background: #f4f4fd;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
+  display: none;
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-icon-box {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
 }
 
 .features-icon {
@@ -32,20 +60,49 @@
 }
 
 .features-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
 }
 
+@media only screen and (min-width: 768px) {
+  .features-title {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+}
+
 .features-text {
+  width: 264px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+@media only screen and (min-width: 768px) {
+  .features-text {
+    width: 356px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-text {
+    font-weight: 400;
+    width: 264px;
+  }
 }
