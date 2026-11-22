@@ -35,7 +35,7 @@
 }
 
 .main-nav {
-  margin-left: 76px;
+  margin-left: 120px;
   margin-right: auto;
 }
 
@@ -45,10 +45,9 @@
   }
 }
 
-@media only screen and (max-width: 1158px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
   .main-nav {
-    margin-left: 120px;
-    margin-right: auto;
+    margin-left: 76px;
   }
 }
 
@@ -125,6 +124,9 @@
 @media only screen and (min-width: 1158px) {
   .contact-list {
     gap: 40px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
   }
 }
 

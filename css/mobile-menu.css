@@ -9,12 +9,20 @@
 
   background-color: #fff;
 
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
   transition: 250ms ease-out;
   transition-property: transform;
 }
 
 .mobile-menu.is-open {
   transform: translateX(0%);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition-delay: 0s;
 }
 
 @media only screen and (min-width: 768px) {
@@ -109,7 +117,6 @@
 
 .mobile-menu-list {
   margin-bottom: auto;
-  margin-left: 16px;
 }
 
 .mobile-menu-item:not(:last-child) {
@@ -123,7 +130,11 @@
   line-height: 1.11;
   letter-spacing: 0.02em;
 
-  color: #2e2f42;
+  color: #434455;
+}
+
+.mobile-menu-contact-item:first-child .mobile-menu-contact-link {
+  color: #4d5ae5;
 }
 
 .mobile-menu-contact-list {
@@ -155,6 +166,11 @@
   gap: 40px;
   padding: 0 16px;
 }
+
+.mobile-menu .icon-box {
+  margin-top: 0;
+}
+
 .icon-link {
 }
 
