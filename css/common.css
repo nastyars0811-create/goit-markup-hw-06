@@ -28,7 +28,7 @@ img {
 
 /* Helper class*/
 .hede {
-  display: none !important;
+  display: none;
 }
 
 .sr-only {
@@ -45,13 +45,11 @@ img {
 }
 
 .container {
-  min-width: 320px;
+  width: 100%;
   max-width: 320px;
   margin: 0 auto;
   padding: 0 16px;
-
-  outline: 2px solid red;
-  outline-offset: -2px;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 768px) {
